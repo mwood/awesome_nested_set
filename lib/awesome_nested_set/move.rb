@@ -64,7 +64,7 @@ module CollectiveIdea #:nodoc:
 
           # We want the record to be 'touched' if it timestamps.
           if @instance.respond_to?(:updated_at)
-            _conditions << ", updated_at = :timestamp"
+           # _conditions << ", updated_at = :timestamp"
           end
 
           [
